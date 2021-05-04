@@ -2,18 +2,18 @@
 @section('content')
 <div class="register-box">
 <div class="register-logo">
-    <a href="{{route('register')}}">Register Admin</a>
+    <a href="{{route('register-admin')}}">Register Admin</a>
 </div>
 
 <div class="card">
 <div class="card-body register-card-body">
     <p class="login-box-msg">Register a new Admin Account</p>
     
-    <form action="{{route('register')}}" method="post">
+    <form action="{{route('register-admin')}}" method="post">
     @csrf
     <div class="form-group d-none">
         <select class="form-control" name="level_id">
-            <option value="2">2</option>
+            <option value="1">1</option>
         </select>
     </div>
 

@@ -73,6 +73,6 @@
     <a href="{{route('register')}}" class="text-center">Register a new User Account</a>
 </p>
 <p class="my-2">
-    <a href="{{route('register')}}" class="text-center">Register a new Admin Account</a>
+    <a href="{{route('register-admin')}}" class="text-center">Register a new Admin Account</a>
 </p>
 @endsection
