@@ -3,6 +3,10 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Database\Seeders\UserSeeder;
+use Database\Seeders\LevelSeeder;
+use Database\Seeders\StatusSeeder;
+use Database\Seeders\DataMobilSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -14,5 +18,11 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
+        $this->call([
+            DataMobilSeeder::class,
+            LevelSeeder::class,
+            StatusSeeder::class,
+            UserSeeder::class,
+        ]);
     }
 }
